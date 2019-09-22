@@ -1,0 +1,11 @@
+export declare function dateIn(dt?: Date): string;
+export declare const toDate: (x: string | number | Date) => Date;
+export declare const toDateOrNone: (x: string | number | Date | undefined) => Date | undefined;
+export declare const dateApply: (dt: Date, f: (dt: Date) => void) => Date;
+export declare const addDays: (dt: Date, days: number) => Date;
+export declare const addMonths: (dt: Date, months: number) => Date;
+export declare const dateOnly: (dt: Date) => Date;
+export declare const toStringTuple: <T extends string[]>(...args: T) => T;
+export declare const fmtDate: (dt: Date) => string;
+export declare const fmtTime: (dt: Date) => string;
+export declare const fmtDateTime: (dt: Date) => string;
